@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import CounterAppOne from "./components/CounterAppOne";
+import CounterAppTwo from "./components/CounterAppTwo";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+   <Box margin="1.2rem">
+      <Box>APP-1</Box>
+      <Box>
+         <CounterAppOne />
+      </Box>
+      <Box>
+         <CounterAppTwo />
+      </Box>
+   </Box>
+);
 
 export default App;
